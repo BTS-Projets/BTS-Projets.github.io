@@ -95,7 +95,7 @@ function renderProjects(filter = "all") {
     projectsGrid.hidden = visibleProjects.length === 0;
     emptyState.hidden = visibleProjects.length !== 0 || filter !== "2";
 
-    const label = visibleProjects.length > 1 ? "projets crées depuis le début" : "projet crée depuis le début";
+    const label = visibleProjects.length > 1 ? "projets crées depuis le début !" : "projet crée depuis le début !";
     projectCount.textContent = `${visibleProjects.length} ${label}`;
 }
 
