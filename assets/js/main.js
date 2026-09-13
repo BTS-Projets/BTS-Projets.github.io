@@ -76,10 +76,10 @@ function createProjectCard(project) {
 
     const links = document.createElement("div");
     links.className = "project-links";
-    links.append(createProjectLink("Voir le code source sur GitHub", project.githubUrl));
+    links.append(createProjectLink("Code source sur GitHub", project.githubUrl));
 
     if (project.demoUrl) {
-        links.append(createProjectLink("Voir le site du projet", project.demoUrl, "primary"));
+        links.append(createProjectLink("Site du projet", project.demoUrl, "primary"));
     }
 
     card.append(meta, heading, repository, description, technologies, links);
