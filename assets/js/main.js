@@ -68,7 +68,7 @@ function createProjectCard(project) {
 
     const technologies = document.createElement("ul");
     technologies.className = "technology-list";
-    technologies.setAttribute("aria-label", "Technologies utilisées");
+    technologies.setAttribute("aria-label", "Technologies et Langages utilisées");
 
     project.technologies.forEach((technology) => {
         technologies.append(createTechnology(technology));
@@ -76,10 +76,10 @@ function createProjectCard(project) {
 
     const links = document.createElement("div");
     links.className = "project-links";
-    links.append(createProjectLink("Voir sur GitHub", project.githubUrl));
+    links.append(createProjectLink("Voir le code source sur GitHub", project.githubUrl));
 
     if (project.demoUrl) {
-        links.append(createProjectLink("Voir le projet", project.demoUrl, "primary"));
+        links.append(createProjectLink("Voir le site du projet", project.demoUrl, "primary"));
     }
 
     card.append(meta, heading, repository, description, technologies, links);
