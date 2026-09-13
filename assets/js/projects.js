@@ -56,8 +56,8 @@ window.BTS_PROJECTS = [
         type: "Application web",
         description: "Interface d’annonces avec recherche, ajout et suppression, enregistrées dans le stockage local du navigateur.",
         technologies: ["HTML", "CSS", "JavaScript", "LocalStorage"],
-        githubUrl: "https://github.com/BTS-Projets/Petites-Annonces",
-        demoUrl: null
+        githubUrl: "https://github.com/BTS-Projets/APP-Petites_Annonces",
+        demoUrl: "https://bts.paulmuller.dev/APP-Petites_Annonces/"
     },
     {
         title: "Jeu de la cible",
