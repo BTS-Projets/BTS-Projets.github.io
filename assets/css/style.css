@@ -22,6 +22,7 @@
 }
 
 html {
+    scroll-padding-block-start: 1rem;
     scroll-behavior: smooth;
 }
 
@@ -167,6 +168,7 @@ h1 {
 }
 
 .projects-section {
+    scroll-margin-block-start: 1rem;
     padding-bottom: clamp(4rem, 8vw, 7rem);
 }
 
