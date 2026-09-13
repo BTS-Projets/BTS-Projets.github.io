@@ -3,35 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets ENSITECH | Paul Muller</title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-        h1 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; }
-        .project-list { list-style: none; padding: 0; }
-        .project-card { border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin-bottom: 15px; transition: transform 0.2s; }
-        .project-card:hover { transform: scale(1.02); border-color: #0056b3; }
-        a { text-decoration: none; color: #0056b3; font-weight: bold; }
-    </style>
+    <meta name="description" content="Portfolio des projets réalisés par Paul Muller durant son BTS SIO.">
+    <meta property="og:title" content="Projets BTS SIO | Paul Muller">
+    <meta property="og:description" content="Portfolio des projets réalisés par Paul Muller durant son BTS SIO.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bts.paulmuller.dev">
+    <title>Projets BTS SIO | Paul Muller</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/projects.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Mes Projets ENSITECH</h1>
-        <p>Étudiant en BTS SIO 1ère année</p>
+    <a class="skip-link" href="#projects">Aller aux projets</a>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="identity" href="./" aria-label="Accueil — Projets BTS SIO de Paul Muller">
+                <span class="identity-name">Paul Muller</span>
+                <span class="identity-context">BTS SIO — Projets</span>
+            </a>
+            <a class="github-link" href="https://github.com/BTS-Projets" target="_blank" rel="noopener noreferrer">
+                Organisation GitHub
+                <span aria-hidden="true">↗</span>
+            </a>
+        </div>
     </header>
 
     <main>
-        <ul class="project-list">
-            <li class="project-card">
-                <h3>Application de Gestion de Tâches</h3>
-                <p>Outil de gestion de workflow réalisé en cours.</p>
-                <a href="/Application-de-Gestion-de-Taches/">Voir le projet →</a>
-            </li>
-            
-            </ul>
+        <section class="intro container" aria-labelledby="page-title">
+            <p class="eyebrow">Portfolio de formation</p>
+            <h1 id="page-title">Projets réalisés en BTS SIO</h1>
+            <p class="intro-text">Une sélection des projets conçus durant mes deux années de BTS SIO, regroupés dans l’organisation GitHub BTS-Projets.</p>
+        </section>
+
+        <section class="projects-section container" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Travaux</p>
+                    <h2 id="projects-title">Les projets</h2>
+                </div>
+                <p class="project-count" id="project-count" aria-live="polite"></p>
+            </div>
+
+            <div class="filters" role="group" aria-label="Filtrer les projets par année">
+                <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Tous</button>
+                <button class="filter-button" type="button" data-filter="1" aria-pressed="false">BTS 1</button>
+                <button class="filter-button" type="button" data-filter="2" aria-pressed="false">BTS 2</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid"></div>
+
+            <div class="empty-state" id="empty-state" hidden>
+                <p>Les projets de deuxième année seront ajoutés progressivement.</p>
+            </div>
+
+            <noscript>
+                <p class="noscript-message">JavaScript doit être activé pour afficher la liste des projets.</p>
+            </noscript>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Paul Muller</p>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2025-2027 Paul Muller</p>
+            <a href="https://github.com/BTS-Projets" target="_blank" rel="noopener noreferrer">BTS-Projets sur GitHub</a>
+        </div>
     </footer>
 </body>
 </html>
