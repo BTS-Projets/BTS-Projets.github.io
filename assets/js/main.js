@@ -26,6 +26,27 @@ function createProjectLink(label, url, variant = "secondary") {
     return link;
 }
 
+function createTechnology(technology) {
+    const item = document.createElement("li");
+    item.className = "technology";
+
+    if (technology.icon) {
+        const icon = document.createElement("img");
+        icon.className = "technology-icon";
+        icon.src = `https://skills.syvixor.com/api/icons?i=${encodeURIComponent(technology.icon)}&perline=1&radius=40`;
+        icon.alt = "";
+        icon.width = 18;
+        icon.height = 18;
+        icon.loading = "lazy";
+        icon.decoding = "async";
+        icon.referrerPolicy = "no-referrer";
+        item.append(icon);
+    }
+
+    item.append(document.createTextNode(technology.name));
+    return item;
+}
+
 function createProjectCard(project) {
     const card = document.createElement("article");
     card.className = "project-card";
@@ -50,7 +71,7 @@ function createProjectCard(project) {
     technologies.setAttribute("aria-label", "Technologies utilisées");
 
     project.technologies.forEach((technology) => {
-        technologies.append(createTextElement("li", "technology", technology));
+        technologies.append(createTechnology(technology));
     });
 
     const links = document.createElement("div");

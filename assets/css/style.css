@@ -301,6 +301,9 @@ h1 {
 }
 
 .technology {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
     padding: 0.22rem 0.5rem;
     border: 1px solid var(--border);
     border-radius: 5px;
@@ -308,6 +311,13 @@ h1 {
     background: var(--surface-subtle);
     font-size: 0.75rem;
     font-weight: 600;
+}
+
+.technology-icon {
+    display: block;
+    width: 1.125rem;
+    height: 1.125rem;
+    flex: 0 0 auto;
 }
 
 .project-links {

@@ -31,16 +31,20 @@ Le site est accessible à l’adresse [bts.paulmuller.dev](https://bts.paulmulle
 Ajouter un objet dans le tableau `window.BTS_PROJECTS` du fichier `assets/js/projects.js` :
 
 ```js
-{
+const project = {
     title: "Nom du projet",
     repository: "Nom-du-depot",
     year: 2,
     type: "Application web",
     description: "Description courte et factuelle.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: [
+        { name: "HTML", icon: "html" },
+        { name: "CSS", icon: "css" },
+        { name: "JavaScript", icon: "javascript" }
+    ],
     githubUrl: "https://github.com/BTS-Projets/Nom-du-depot",
     demoUrl: null
-}
+};
 ```
 
-Utiliser `year: 1` ou `year: 2` selon l’année du BTS. Si aucune démonstration n’est publiée, conserver `demoUrl: null`.
+Utiliser `year: 1` ou `year: 2` selon l’année du BTS. Si aucune démonstration n’est publiée, conserver `demoUrl: null`. Les icônes utilisent les identifiants de [Skills Icons](https://builder.syvixor.com) ; une technologie sans icône dédiée peut simplement être écrite avec `{ name: "Nom" }`.
