@@ -1,4 +1,18 @@
 window.BTS_PROJECTS = [
+
+    {
+        title: "",
+        repository: "E-Commerce-CPascher",
+        year: 1,
+        type: "Projet Gestion des états de frais",
+        description: "Application C# en console dédiée. Elle associe les dépenses des commerciaux aux services, de suivre leur remboursement et calculer les montants remboursés.",
+        technologies: [
+            { name: "C#", icon: "csharp" },
+            { name: "Visual Studio", icon: "visualstudio" }
+        ],
+        githubUrl: "https://github.com/BTS-Projets/APP-CS-Gestion-des-etats-de-frais",
+        demoUrl: null
+    },
     {
         title: "CPasCher",
         repository: "E-Commerce-CPascher",
