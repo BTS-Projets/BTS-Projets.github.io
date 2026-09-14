@@ -3,7 +3,7 @@ window.BTS_PROJECTS = [
         title: "Gestion des états de frais",
         repository: "APP-CS-Gestion-des-etats-de-frais",
         year: 2,
-        type: "Projet Gestion des états de frais",
+        type: "Application en C#",
         description: "Application C# en console dédiée. Elle associe les dépenses des commerciaux aux services, de suivre leur remboursement et calculer les montants remboursés.",
         technologies: [
             { name: "C#", icon: "csharp" },
