@@ -1,7 +1,6 @@
 window.BTS_PROJECTS = [
-
     {
-        title: "Gestion des états de frais"",
+        title: "Gestion des états de frais",
         repository: "APP-CS-Gestion-des-etats-de-frais",
         year: 2,
         type: "Projet Gestion des états de frais",
