@@ -1,15 +1,44 @@
 window.BTS_PROJECTS = [
     {
-        title: "Gestion des états de frais",
-        repository: "APP-CS-Gestion-des-etats-de-frais",
+        title: "Découverte des héritages et du polymorphisme",
+        repository: "TP4-CSharp-Heritage_Polymorphisme",
         year: 2,
-        type: "Application en C#",
+        type: "Application console en C#",
+        description: "Application C# en console dédiée. Elle permet de découvrir tous les horizons autour des héritages (père, fils) et du polymorphisme.",
+        technologies: [
+            { name: "C#", icon: "csharp" },
+            { name: "Visual Studio", icon: "visualstudio" }
+        ],
+        githubUrl: "https://github.com/BTS-Projets/TP4-CSharp-Heritage_Polymorphisme",
+        demoUrl: null
+    },
+    {
+        title: "Site web de mon portfolio d'étudiant professionnel.",
+        repository: "paul-portfolio",
+        year: 2,
+        type: "Site Web Type Portfolio",
+        description: "Site internet professionnel dans le cas de mon BTS SIO SLAM pour mon portfolio en langage Svelte. Il contient toutes les informations nécessaires pour mieux me connaître !",
+        technologies: [
+            { name: "Svelte", icon: "svelte" },
+            { name: "HTML", icon: "html" },
+            { name: "CSS", icon: "css" },
+            { name: "JavaScript", icon: "javascript" },
+            { name: "Visual Studio Code", icon: "visualstudiocode" }
+        ],
+        githubUrl: "https://github.com/BTS-Projets/paul-portfolio",
+        demoUrl: "https://paulmuller.dev"
+    },
+    {
+        title: "Gestion des états de frais",
+        repository: "APP-CSharp-Gestion-des-etats-de-frais",
+        year: 2,
+        type: "Application console en C#",
         description: "Application C# en console dédiée. Elle associe les dépenses des commerciaux aux services, de suivre leur remboursement et calculer les montants remboursés.",
         technologies: [
             { name: "C#", icon: "csharp" },
             { name: "Visual Studio", icon: "visualstudio" }
         ],
-        githubUrl: "https://github.com/BTS-Projets/APP-CS-Gestion-des-etats-de-frais",
+        githubUrl: "https://github.com/BTS-Projets/APP-CSharp-Gestion-des-etats-de-frais",
         demoUrl: null
     },
     {
