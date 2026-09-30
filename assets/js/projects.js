@@ -19,11 +19,12 @@ window.BTS_PROJECTS = [
         type: "Site Web Type Portfolio",
         description: "Site internet professionnel dans le cas de mon BTS SIO SLAM pour mon portfolio en langage Svelte. Il contient toutes les informations nécessaires pour mieux me connaître !",
         technologies: [
-            { name: "Svelte", icon: "svelte" },
             { name: "HTML", icon: "html" },
             { name: "CSS", icon: "css" },
             { name: "JavaScript", icon: "javascript" },
-            { name: "Visual Studio Code", icon: "visualstudiocode" }
+            { name: "Svelte", icon: "svelte" },
+            { name: "Visual Studio Code", icon: "visualstudiocode" },
+            { name: "GitHub Pages", icon: "githubpages" }
         ],
         githubUrl: "https://github.com/BTS-Projets/paul-portfolio",
         demoUrl: "https://paulmuller.dev"
